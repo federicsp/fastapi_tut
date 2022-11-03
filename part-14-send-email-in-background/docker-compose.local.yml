@@ -23,8 +23,8 @@ services:
       - POSTGRES_DB=app
 
   web:
-    build:
-      context: ./backend
+    build: #build the image from a dockerfile
+      context: ./backend 
       dockerfile: Dockerfile
     depends_on:
       - db
