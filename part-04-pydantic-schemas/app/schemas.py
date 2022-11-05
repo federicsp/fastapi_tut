@@ -3,8 +3,8 @@ from pydantic import BaseModel, HttpUrl
 from typing import Sequence
 
 
-class Recipe(BaseModel):
-    id: int
+class Recipe(BaseModel): 
+    id: int  #pydantic enforces type hints at runtime
     label: str
     source: str
     url: HttpUrl
