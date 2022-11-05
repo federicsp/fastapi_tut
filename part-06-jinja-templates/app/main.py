@@ -9,7 +9,7 @@ from app.recipe_data import RECIPES
 
 
 BASE_PATH = Path(__file__).resolve().parent
-TEMPLATES = Jinja2Templates(directory=str(BASE_PATH / "templates"))
+TEMPLATES = Jinja2Templates(directory=str(BASE_PATH / "templates")).  #https://fastapi.tiangolo.com/advanced/templates/#using-jinja2templates
 
 
 app = FastAPI(title="Recipe API", openapi_url="/openapi.json")
